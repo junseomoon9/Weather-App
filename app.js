@@ -46,6 +46,35 @@ function startApp() {
         notification.innerHTML = "<p>Browser does not support geolocation</p>";
     }
 }
+// ------- Event Listeners -------
+tempValue.addEventListener("click", function(){
+    // IF there is NO weather data
+    if (weather.temperature.unit === "undefined"){
+        return;
+    } 
+
+    // IF there IS weather data
+    if (weather.temperature.unit === "celsius"){
+
+        let fahrenheit = celsiusToFahrenheit(weather.temperature.value);
+
+        fahrenheit = Math.floor(fahrenheit);
+        tempValue.innerHTML = `<p>${fahrenheit} °<span>F</span></p>`;
+        weather.temperature.unit = "fahrenheit";
+        
+    } else {
+        tempValue.innerHTML = `<p>${weather.temperature.value} °<span>C</span></p>`;
+        weather.temperature.unit = "celsius";
+    }
+    
+});
+
+// ------- Functions -------
+function celsiusToFahrenheit(temp){
+
+    return (temp * 9/5) + 32;
+
+};
 
 // Obtain the current latitude and longitude data
 function setPosition(position){
