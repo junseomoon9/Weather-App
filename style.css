@@ -1,0 +1,150 @@
+/*
+  ========================================
+  All
+  ========================================
+*/
+
+*{
+    margin: 0 ; padding: 0;
+    box-sizing: border-box;
+}
+
+/*
+  ========================================
+  html
+  ========================================
+*/
+html {
+    height: 100%;
+    margin: 0;
+}
+
+/*
+  ========================================
+  Body
+  ========================================
+*/
+
+body{
+    background: linear-gradient(to right bottom,#648880, #293f50);
+    font: 400 16px "Montserrat";
+}
+
+/*
+  ========================================
+  Containers
+  ========================================
+*/
+
+.container{
+    width: 300px;    
+    background-color: #FFF;
+    
+    display: block;
+    margin: 50px auto;
+    
+    border-radius: 10px;
+    padding-bottom : 50px;
+}
+
+.weather-container{
+    width: 300px;
+    height: 260px;
+}
+
+/*
+  ========================================
+  Title
+  ========================================
+*/
+
+.main-title p{
+    text-align: center;
+    padding: 15px;
+    margin: 0 auto;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #293251;
+}
+
+/*
+  ========================================
+  Notification
+  ========================================
+*/
+
+.notification{
+    background-color: #f8d7da;
+    display: none;
+}
+
+.notification p{
+    color: #721c24;
+    font-size: 1.2em;
+    margin: 0;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/*
+  ========================================
+  Weather Icon
+  ========================================
+*/
+
+
+.weather-icon img{
+    display: block;
+    margin: 0 auto;
+}
+
+/*
+  ========================================
+  Temperature Value
+  ========================================
+*/
+
+
+.temperature-value p{
+    padding: 0;
+    margin: 0;
+    color: #293251;
+    font-size: 4em;
+    text-align: center;
+    cursor: pointer;
+}
+
+.temperature-value p:hover{
+    cursor: pointer;
+}
+
+.temperature-value span{
+    color: #293251;
+    font-size: 0.5em;
+}
+
+/*
+  ========================================
+  Temperature Description
+  ========================================
+*/
+
+.temperature-description {
+    padding: 20px;
+    margin: 0;
+    color: #293251;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+/*
+  ========================================
+  Location
+  ========================================
+*/
+.location{
+    
+    color: #293251;
+    text-align: center;
+    font-size: 1em;
+}
